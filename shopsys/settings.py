@@ -100,11 +100,12 @@ DATABASES = {
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
+#语言为
+LANGUAGE_CODE = 'zh-cn'
 
-LANGUAGE_CODE = 'en-us'
 
 DATE_FORMAT = 'Y-m-d'
-
+#时区设置为上海
 TIME_ZONE = 'Asia/Shanghai'
 
 # 是否开启国际化支持，不开启时可以不加载翻译模块优化性能
