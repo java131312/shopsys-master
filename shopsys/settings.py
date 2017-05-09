@@ -24,7 +24,7 @@ SETTINGS_DIR = os.path.dirname(__file__)
 SECRET_KEY = 'ao#neh4$it@426fphjeqe$l^#0j7j3ws_lx@_1*c66c9xb-!3t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True 
 
 ALLOWED_HOSTS = []
 
@@ -40,12 +40,13 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'shopsys.apps.catalog',
     'shopsys.apps.cart',
+    'shopsys.apps.login',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+#    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
